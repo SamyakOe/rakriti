@@ -14,8 +14,10 @@
   
   /* Header & Navigation Styling mathi aboutus, service, gallery ,contact ko lagi*/
   header {
-    background-color: #7b2d66;
+    background-color: rgb(10, 10, 76);
     padding: 10px 0;
+    position: fixed;
+    width: 100%;
   }
   
   header nav ul { /*header bhitra ko nav bhitra ko ul lai style garna*/
@@ -37,6 +39,7 @@
   /* Main Content Styling */
   main {
     padding: 20px;
+    padding-top: 44px;
   }
   
   section {
@@ -115,7 +118,7 @@
   footer {
     text-align: center;
     padding: 10px;
-    background-color: #7b2d66;
+    background-color: rgb(10, 10, 76);
     color: white;
     position: fixed;
     width: 100%;
@@ -136,5 +139,9 @@
   
     form {
       width: 100%;
+    }
+    main{
+      padding-top: 155px;
+      padding-bottom: 45px;
     }
   }

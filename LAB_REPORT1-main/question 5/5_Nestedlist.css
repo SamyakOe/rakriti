@@ -1,23 +1,26 @@
 *{
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 body {
     margin: 2px;
     padding: 5px;
 }
+.container{
+    display: inline-flex;
+    width: 100%;
+    gap: 5px;
+}
 .box1 {
     width: 50%;
-    float: left;
+    
     border: 1px solid black;
-    height: 538px;
-    font-size: larger;
+    height:100%;
+    padding: 5px;
 }
 .box2 {
+    padding: 5px;
     width: 50%;
-    float: inline-end;
+    
     border: 1px solid black;
-    border-bottom: 1px solid black;
-}
-.box2{
-    font-size: small;
+    height: 100%;
 }
