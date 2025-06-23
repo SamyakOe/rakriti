@@ -7,14 +7,12 @@
   
   /* Basic page styling */
   body {
-    font-family: Arial, sans-serif;
-    background-color: rgb(140, 136, 136);
-    color: #333;
+    background-color: rgb(225, 225, 225);
   }
   
   /* Header & Navigation Styling mathi aboutus, service, gallery ,contact ko lagi*/
   header {
-    background-color: rgb(10, 10, 76);
+    background-color: darkblue;
     padding: 10px 0;
     position: fixed;
     width: 100%;
@@ -102,7 +100,7 @@
   }
   
   form button {
-    background-color: rgb(112, 112, 232);
+    background-color: darkblue;
     color: white;
     padding: 10px;
     font-size: 16px;
@@ -111,14 +109,14 @@
   }
   
   form button:hover {
-    background-color: rgb(65, 64, 64);
+    background-color: rgb(0, 0, 89);
   }
   
   /* Footer Styling */
   footer {
     text-align: center;
     padding: 10px;
-    background-color: rgb(10, 10, 76);
+    background-color: darkblue;
     color: white;
     position: fixed;
     width: 100%;
