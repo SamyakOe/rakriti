@@ -1,114 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dropdown Navigation Bar</title>
-  <style>
-    /* Base Styles */
-    *{
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dropdown Navigation Bar</title>
+    <style>
+      /* Base Styles */
+      * {
         margin: 0;
         padding: 0;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color:  rgb(69, 2, 69);
-    }
-    .navbar {
-      background-color:white;
-      overflow: hidden;
-      border-radius: 10px;
-      padding-top: 10px ;
-      margin-top: 15px;
-      display: flex;
-      gap: 200px;
-    }
-    .navbar a {
-      display: block;
-      color: rgb(14, 13, 13);
-      text-align: left;
-      padding: 14px 20px;
-      text-decoration: none;
-      margin: 0;
-      font-size: 20px;
-    }
-    .navbar a:hover {
-      background-color: #5910b9;
-    }  /*ya sama chai purai navigation bar lai style garna ko lagi*/
+      }
+      body {
+        margin: 0;
+        padding: 0px 8px;
+        background-color: rgb(69, 2, 69);
+      }
+      .navbar {
+        background-color: white;
+        overflow: hidden;
+        border-radius: 10px;
+        padding-top: 10px;
+        margin-top: 15px;
+        display: flex;
+        gap: 200px;
+      }
+      .navbar a {
+        display: block;
+        color: rgb(14, 13, 13);
+        text-align: left;
+        padding: 14px 20px;
+        text-decoration: none;
+        margin: 0;
+        font-size: 20px;
+      }
+      .dropdown {
+        float: left;
+        overflow: hidden;
+      }
+      .dropdown .dropbtn {
+        font-size: 20px;
+        border: none;
+        color: rgb(16, 15, 15);
+        background-color: inherit;
+        padding: 10px 25px;
+      }
+      .dropdown-content {
+        margin-top: 10px;
+        display: none;
+        position: absolute;
+        background-color: white;
+        width: 200px;
+        border-radius: 10px;
+        height: auto;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      }
 
+      .dropdown-content a:hover {
+        background-color: rgb(192, 187, 187);
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
 
-    /* Dropdown Styles yo chai services ma hover garda arko content aauna ko lagi  */
-    .dropdown {
-      float: left;
-      overflow: hidden;
-    }
-    .dropdown .dropbtn {
-      font-size: 20px;
-      border: none;
-      outline: none;
-      color: rgb(16, 15, 15);
-      background-color: inherit;
-      padding: 10px 25px;
-      font-family: inherit;
-    }
-    .dropdown-content {
-      margin-top: 10px;
-      display: none;
-      position: absolute;
-      background-color: white;
-      width: 200px;
-      border-radius: 10px;
-      height: auto;
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    }
-
-    .dropdown-content a:hover {
-      background-color: rgb(192, 187, 187);
-    }
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-    .tri-up{
-      width: 0;
-      height: 0; 
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-bottom: 10px solid black; 
-      
-    }
-    .tri-down {
-      width: 10px;
-      height: 0;
-      border-left: 10px solid transparent;
-      border-right: 10px solid transparent;
-      border-top: 10px solid black;
-    }
-  
-  </style>
-</head>
-<body>
-  <div class="navbar">
-    <a href="#">Home</a>
-    <div class="dropdown">
-      <button class="dropbtn">Services
-        <span class="tri-up"></span>
-      </button>
-      <div class="dropdown-content">
-        <a href="#">Design</a>
-        <a href="#">Development</a>
-        <a href="#">Accessibility</a>
-        <a href="#">Content Strategy</a>
-        <a href="#">Training</a>
+      .arrow {
+        border: solid black;
+        border-width: 0 3px 3px 0;
+        display: inline-block;
+        padding: 3px;
+      }
+      .down {
+        transform: rotate(45deg);
+        margin-bottom: 6px;
+      }
+      .up {
+        transform: rotate(-135deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <a href="#">Home</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Services
+          <i class="arrow up"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Design</a>
+          <a href="#">Development</a>
+          <a href="#">Accessibility</a>
+          <a href="#">Content Strategy</a>
+          <a href="#">Training</a>
+        </div>
       </div>
+      <a href="#"
+        >Portfolio
+        <i class="arrow down"></i>
+      </a>
+      <a href="#"
+        >About
+        <i class="arrow down"></i>
+      </a>
     </div>
-    <a href="#">Portfolio 
-      <span class="tri-down"></span>
-    </a>
-    <a href="#">About 
-      <span class="tri-down"></span>
-    </a>
-  </div>
-</body>
+  </body>
 </html>

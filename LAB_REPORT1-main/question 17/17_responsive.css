@@ -36,12 +36,6 @@ body {
   padding: 10px;
 }
 
-.menu a:hover {
-  background-color: white;
-  color: blueviolet;
-  border-radius: 5px;
-}
-
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -64,7 +58,7 @@ body {
       position: absolute;
       top: 60px;
       left: 0;
-      background-color: blueviolet;
+      background-color: rgb(4, 4, 58);
   }
 
   .menu li {
