@@ -1,14 +1,12 @@
 /* General Styles */
 body {
-    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f9f9f9;
-    color: #333;
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: darkblue;
     color: white;
     text-align: center;
     padding: 20px 0;
@@ -28,8 +26,8 @@ section {
 }
 
 h2 {
-    color: #4CAF50;
-    border-bottom: 2px solid #4CAF50;
+    color: darkblue;
+    border-bottom: 2px solid darkblue;
     padding-bottom: 5px;
 }
 
