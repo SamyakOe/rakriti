@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="product.xsl"?>
+<products>
+    <product>
+        <productname>Mouse</productname>
+        <category>Electronics</category>
+        <price>500</price>
+        <quantity>15</quantity>
+    </product>
+    <product>
+        <productname>Chair</productname>
+        <category>Furniture</category>
+        <price>1200</price>
+        <quantity>8</quantity>
+    </product>
+    <product>
+        <productname>Keyboard</productname>
+        <category>Electronics</category>
+        <price>700</price>
+        <quantity>12</quantity>
+    </product>
+    <product>
+        <productname>Table</productname>
+        <category>Furniture</category>
+        <price>1500</price>
+        <quantity>11</quantity>
+    </product>
+</products>

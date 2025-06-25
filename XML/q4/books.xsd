@@ -1,0 +1,71 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="books">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="book" maxOccurs="unbounded">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="title" type="xs:string" />
+                            <xs:element name="author" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="name">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="firstname" type="xs:string" />
+                                                    <xs:element name="middlename" type="xs:string" />
+                                                    <xs:element name="lastname" type="xs:string" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element name="phone" type="xs:string" />
+                                        <xs:element name="email" type="xs:string" />
+                                    </xs:sequence>
+                                    <xs:attribute name="title" use="optional" default="ms">
+                                        <xs:simpleType>
+                                            <xs:restriction base="xs:string">
+                                                <xs:enumeration value="mr" />
+                                                <xs:enumeration value="ms" />
+                                                <xs:enumeration value="mrs" />
+                                            </xs:restriction>
+                                        </xs:simpleType>
+                                    </xs:attribute>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="pageNo" type="xs:positiveInteger" />
+                            <xs:element name="price">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="PriceLimit">
+                                            <xs:attribute name="currency" use="required">
+                                                <xs:simpleType>
+                                                    <xs:restriction base="xs:string">
+                                                        <xs:enumeration value="NPR" />
+                                                        <xs:enumeration value="INR" />
+                                                        <xs:enumeration value="USD" />
+                                                    </xs:restriction>
+                                                </xs:simpleType>
+                                            </xs:attribute>
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="ISBN" type="xs:string" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:unique name="uniqueISBN">
+            <xs:selector xpath="book" />
+            <xs:field xpath="@ISBN" />
+        </xs:unique>
+    </xs:element>
+    <xs:simpleType name="PriceLimit">
+        <xs:restriction base="xs:decimal">
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="600" />
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

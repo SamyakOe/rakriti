@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE book SYSTEM "../q2/book.dtd">
+<book xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="../q2/book.xsd">
+     <title>Introduction to Digital Logic</title>
+     <author>Er. Suvash Chandra Gautam, Er. Ganesh Ram Suwal, Er. Raj Kumar Maharjan</author>
+     <ISBN>9789376229</ISBN>
+     <publisher>Makalu Publication House</publisher>
+     <edition>Reprint 2021</edition>
+     <price>₨ 575</price>
+</book>

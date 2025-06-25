@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Hospital xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="hospital.xsd">
+    <patient>
+        <pname>
+            <firstname>Sarita</firstname>
+            <middlename>Kumari</middlename>
+            <lastname>Thapa</lastname>
+        </pname>
+        <patientnumber>15425</patientnumber>
+        <DoctorName>Dr. Hari Kunwar</DoctorName>
+        <Diseases>
+            <Disease>Influenza</Disease>
+            <Disease>Pneumonia</Disease>
+        </Diseases>
+        <consultationcharge>1500</consultationcharge>
+        <LabTests>
+            <test>Blood Test</test>
+            <test>Urine Test</test>
+        </LabTests>
+    </patient>
+</Hospital>

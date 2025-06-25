@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<songs>
+    <song>
+        <name> Shape of You</name>
+        <singer>Ed Sheeran</singer>
+        <ComposeBy>Ed Sheeran, Steve Mac, Johnny McDaid</ComposeBy>
+        <length>3:53</length>
+    </song>
+    <song>
+        <name> Bohemian Rhapsody</name>
+        <singer>Queen (Freddie Mercury lead vocals)</singer>
+        <ComposeBy>Freddie Mercury</ComposeBy>
+        <length>5:55</length>
+    </song>
+    <song>
+        <name>Blinding Lights</name>
+        <singer>The Weeknd</singer>
+        <ComposeBy>Abel Tesfaye, Ahmad Balshe, Jason Quenneville, Max Martin, Oscar Holter</ComposeBy>
+        <length>3:20</length>
+    </song>
+    <song>
+        <name> Someone Like You </name>
+        <singer>Adele</singer>
+        <ComposeBy>Adele Adkins, Dan Wilson</ComposeBy>
+        <length>4:45</length>
+    </song>
+</songs>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sales xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="sales.xsd">
+    <salesman>
+        <name>
+            <first>Sarita</first>
+            <middle>Kumari</middle>
+            <last>Tamang</last>
+        </name>
+        <phone type="personal">977-097645</phone>
+        <area>Kathmandu</area>
+        <records>
+            <record>
+                <product productid="sales">
+                    <sku>Sales</sku>
+                    <product_name>Conditioner</product_name>
+                </product>
+                <quantity>150 bottle</quantity>
+                <price currency="npr">230</price>
+                <date type="bs">1078-07-09</date>
+            </record>
+            <record>
+                <product productid="worker">
+                    <sku>Worker</sku>
+                    <product_name>Sandals</product_name>
+                </product>
+                <quantity>200</quantity>
+                <price currency="npr">600</price>
+                <date type="bs">2080-07-23</date>
+            </record>
+        </records>
+    </salesman>
+</sales>

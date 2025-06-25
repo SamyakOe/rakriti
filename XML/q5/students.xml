@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE students SYSTEM "students.dtd">
+<students>
+   <student rollno="1">
+       <name>
+           <firstname>Ravi</firstname>
+           <middlename>Bahadur</middlename>
+           <lastname>Maskey</lastname>
+       </name>
+       <email>ravi@gmail.com</email>
+       <phone type="98">9812345748</phone>
+       <address type="permanent">Kathmandu, Nepal</address>
+       <DOB type="AD">1998-05-19</DOB>
+   </student>
+   <student rollno="2">
+       <name>
+           <firstname>Sarmila</firstname>
+           <lastname>Duwal</lastname>
+       </name>
+       <email>sarmila@gmail.com</email>
+       <phone type="97">97234563754</phone>
+       <address type="temporary">Hetauda, Nepal</address>
+       <DOB type="BS">2047-10-25</DOB>
+   </student>
+</students>

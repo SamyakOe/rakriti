@@ -1,0 +1,18 @@
+<!ELEMENT students (student+)>
+<!ELEMENT student (name, email, phone, address, DOB)>
+<!ATTLIST student rollno CDATA #REQUIRED>
+
+<!ELEMENT name (firstname, middlename?, lastname)>
+<!ELEMENT firstname (#PCDATA)>
+<!ELEMENT middlename (#PCDATA)>
+<!ELEMENT lastname (#PCDATA)>
+
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ATTLIST phone type (97|98) #REQUIRED>
+
+<!ELEMENT address (#PCDATA)>
+<!ATTLIST address type (permanent|temporary) #REQUIRED>
+
+<!ELEMENT DOB (#PCDATA)>
+<!ATTLIST DOB type (AD|BS) #REQUIRED>

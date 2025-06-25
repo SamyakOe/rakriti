@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TU xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="tu.xsd">
+    <Employee>
+        <post>Manager</post>
+        <salary>45000</salary>
+        <gender>male</gender>
+        <username>shya12@er</username>
+        <password>Heroes71</password>
+    </Employee>
+</TU>

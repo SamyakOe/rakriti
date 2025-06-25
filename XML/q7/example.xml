@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE Movies [
+    <!ELEMENT Movies (Movie+)>
+    <!ELEMENT Movie (title, year, _director+, (comment | newcomment)+)>
+    <!ATTLIST Movie id ID #REQUIRED>
+    <!ELEMENT title (#PCDATA)>
+    <!ELEMENT year (#PCDATA)>
+    <!ELEMENT _director (_directorname)>
+    <!ELEMENT _directorname (#PCDATA)>
+    <!ELEMENT comment (#PCDATA)>
+    <!ELEMENT newcomment (#PCDATA)>
+    <!ATTLIST comment type CDATA #IMPLIED>
+]> -->
+<Movies xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="example.xsd">
+    <Movie id="m001">
+        <title>Inception</title>
+        <year>2010</year>
+        <_director>
+            <_directorname>Christopher Nolan</_directorname>
+        </_director>
+        <comment type="en">Tt was amazing</comment>
+        <newcomment>Amazing</newcomment>
+    </Movie>
+    <Movie id="m089">
+        <title>Parasite</title>
+        <year>2019</year>
+        <_director>
+            <_directorname>Bong Joon-ho</_directorname>
+        </_director>
+        <comment type="en">It was interesting</comment>
+        <newcomment>Amazing</newcomment>
+    </Movie>
+</Movies>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="books.xsd">
+    <book ISBN="98-26-765-765">
+        <title>Learning XML</title>
+        <author title="mr">
+            <name>
+                <firstname>Shyam </firstname>
+                <middlename>Man</middlename>
+                <lastname>Shakya</lastname>
+            </name>
+            <phone>1234567890</phone>
+            <email>shyam@gmail.com</email>
+        </author>
+        <author title="ms">
+            <name>
+                <firstname>Rajina</firstname>
+                <middlename>Kumari.</middlename>
+                <lastname>Shah</lastname>
+            </name>
+            <phone>0123456789</phone>
+            <email>rajina@gmail.com</email>
+        </author>
+        <pageNo>200</pageNo>
+        <price currency="NPR">530</price>
+    </book>
+</books>

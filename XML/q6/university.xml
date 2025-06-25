@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<university xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="university.xsd">
+    <school sid="SCH001">
+        <name>Padma kanya multiple campus</name>
+        <location>Kathmandu, Nepal</location>
+        <staffCollection>
+            <staff staffId="STF001" category="academic">
+                <name>Harish Singh</name>
+                <title>Professor</title>
+                <addresses>
+                    <address>
+                        <street>Main Road</street>
+                        <suburb>Kathmandu</suburb>
+                        <postcode>44600</postcode>
+                    </address>
+                    <address>
+                        <street>Ring Road</street>
+                        <suburb>Bhaktapur</suburb>
+                        <postcode>44800</postcode>
+                    </address>
+                </addresses>
+            </staff>
+            <staff staffId="STF002" category="technical">
+                <name>Prabal Maharjan</name>
+                <addresses>
+                    <address>
+                        <street>Naya Bazaar</street>
+                        <suburb>Patan</suburb>
+                        <postcode>44700</postcode>
+                    </address>
+                </addresses>
+            </staff>
+        </staffCollection>
+        <subjectCollection>
+            <subject subjectCode="CS101">
+                <name>Introduction to Programming</name>
+                <description>Application design using programming language python.</description>
+                <capacity>60</capacity>
+            </subject>
+            <subject subjectCode="CS102">
+                <name>Database Management</name>
+                <description>manage database of company</description>
+                <capacity>70</capacity> 
+            </subject>
+        </subjectCollection>
+    </school>
+</university>
