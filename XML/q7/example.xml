@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- <!DOCTYPE Movies [
+<!DOCTYPE Movies [
     <!ELEMENT Movies (Movie+)>
     <!ELEMENT Movie (title, year, _director+, (comment | newcomment)+)>
     <!ATTLIST Movie id ID #REQUIRED>
@@ -10,7 +10,7 @@
     <!ELEMENT comment (#PCDATA)>
     <!ELEMENT newcomment (#PCDATA)>
     <!ATTLIST comment type CDATA #IMPLIED>
-]> -->
+]>
 <Movies xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:noNamespaceSchemaLocation="example.xsd">
     <Movie id="m001">

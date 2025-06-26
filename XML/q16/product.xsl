@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-
   <xsl:output method="html" indent="yes" />
-
   <xsl:template match="/products">
     <html>
       <head>
@@ -15,9 +13,7 @@
       </head>
       <body>
         <h2>Grouped Products (Quantity ≥ 10)</h2>
-        <xsl:for-each select="product[quantity &gt;= 10][
-            not(category = preceding-sibling::product[quantity &gt;= 10]/category)
-          ]">
+        <xsl:for-each select="product[quantity &gt;= 10][not(category = preceding-sibling::product[quantity &gt;= 10]/category)]">
           <h3><xsl:value-of select="category"/></h3>
           <table>
             <tr>
@@ -40,5 +36,4 @@
       </body>
     </html>
   </xsl:template>
-
 </xsl:stylesheet>

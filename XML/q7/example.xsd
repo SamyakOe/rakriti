@@ -7,7 +7,6 @@
             </xs:sequence>
         </xs:complexType>
     </xs:element>
-
     <xs:element name="Movie">
         <xs:complexType>
             <xs:sequence>

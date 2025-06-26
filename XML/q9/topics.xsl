@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xsl:stylesheet version="1.0"
-    xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:template match="/">
         <html>
             <head>
@@ -37,20 +36,14 @@
                 </style>
             </head>
             <body>
-                <h1>
-                    <xsl:value-of select="topics/title" />
-                </h1>
+                <h1><xsl:value-of select="topics/title" /></h1>
                 <table>
                     <xsl:for-each select="topics/category">
                         <tr>
                             <td>
-                                <h2>
-                                    <xsl:value-of select="@name" />
-                                </h2>
+                                <h2><xsl:value-of select="@name" /></h2>
                                 <xsl:for-each select="item">
-                                    <div class="item">
-                                        <xsl:value-of select="." />
-                                    </div>
+                                    <div class="item"><xsl:value-of select="." /></div>
                                 </xsl:for-each>
                             </td>
                         </tr>
@@ -59,5 +52,4 @@
             </body>
         </html>
     </xsl:template>
-
 </xsl:stylesheet>

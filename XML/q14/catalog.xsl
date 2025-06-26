@@ -4,22 +4,14 @@
         <html>
             <head>
                 <style>
-                    table {
-                    border-collapse: collapse;
-                    width: 100%;
-                    }
+                    table { border-collapse: collapse; width: 100%;}
                     th, td {
                     border: 1px solid black;
                     padding: 8px;
                     text-align: left;
                     }
-                    th {
-                    background-color: #1167b1;
-                    color: white;
-                    }
-                    tr:nth-child(even) {
-                    background-color: #f2f2f2;
-                    }
+                    th {background-color: #1167b1;color: white;}
+                    tr:nth-child(even) {background-color: #f2f2f2;}
                 </style>
             </head>
             <body>
